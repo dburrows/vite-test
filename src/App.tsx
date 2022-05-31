@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Box, Button } from "@chakra-ui/react";
+import { SummaryCard } from "./design_system/SummaryCard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
           Click Me : {count}
         </Button>
       </Box>
+      <SummaryCard title="A Card" text="some text" />
     </Box>
   );
 }
